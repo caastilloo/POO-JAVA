@@ -58,10 +58,10 @@ El proyecto está organizado por módulos temáticos, facilitando la navegación
 
 ## 🎯 Objetivos de aprendizaje
 
-- ✅ Consolidar los fundamentos de POO
-- ✅ Escribir código legible y mantenible
-- ✅ Comprender la reutilización y escalabilidad del software
-- ✅ Aplicar buenas prácticas desde etapas tempranas
+- Consolidar los fundamentos de POO
+- Escribir código legible y mantenible
+- Comprender la reutilización y escalabilidad del software
+- Aplicar buenas prácticas desde etapas tempranas
 
 ---
 
@@ -69,9 +69,9 @@ El proyecto está organizado por módulos temáticos, facilitando la navegación
 
 Este repositorio no solo contiene ejercicios, sino que refleja:
 
-- ✅ Evolución en la forma de programar
-- ✅ Mejora progresiva en la estructura del código
-- ✅ Aplicación práctica de conceptos teóricos
+- Evolución en la forma de programar
+- Mejora progresiva en la estructura del código
+- Aplicación práctica de conceptos teóricos
 
 ---
 
