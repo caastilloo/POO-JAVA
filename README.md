@@ -17,29 +17,29 @@ El objetivo de este repositorio es demostrar la comprensión de los principios f
 ## 🧠 Conceptos trabajados
 
 ### 1 – Introducción a POO en Java
-- 🧩 Clases y objetos
-- 🔒 Encapsulación
-- 🏗️ Constructores
-- 🔗 Relaciones entre clases (asociación, agregación, composición)
+- Clases y objetos
+- Encapsulación
+- Constructores
+- Relaciones entre clases (asociación, agregación, composición)
 
 ### 2 – Uso avanzado de clases y objetos
-- 🧬 Herencia
-- 🔁 Polimorfismo
-- 📐 Clases abstractas e interfaces
-- 📦 Organización del código y buenas prácticas
+- Herencia
+- Polimorfismo
+- Clases abstractas e interfaces
+- Organización del código y buenas prácticas
 
 ### 3 – Colecciones dinámicas de datos y programación funcional
-- 🗂️ Colecciones (`ArrayList`, `HashMap`, `LinkedList`...)
-- 🔄 Iteradores y bucles avanzados
-- 🧮 Introducción a la programación funcional en Java
-- ⚡ Expresiones lambda y Streams
+- Colecciones (`ArrayList`, `HashMap`, `LinkedList`...)
+- Iteradores y bucles avanzados
+- Introducción a la programación funcional en Java
+- Expresiones lambda y Streams
 
 ---
 
 ## 🛠️ Tecnologías
 
-- ☕ Java
-- 🧰 IDE (IntelliJ)
+- Java
+- IDE (IntelliJ)
 
 ---
 
