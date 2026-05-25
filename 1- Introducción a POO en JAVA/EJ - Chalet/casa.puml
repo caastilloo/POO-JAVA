@@ -1,0 +1,73 @@
+@startuml
+
+package Chalet {
+
+    class Casa {
+        - String direccion
+        - ArrayList<Habitacion> listaHabitaciones
+        - Propietario propietario
+        - ArrayList<Electrodomesticos> listaElectrodomesticos
+        --
+        + Casa(String direccion)
+        + crearHabitacion(String nombre, double metros)
+        + borrarHabitacion(String nombre)
+        + mostarHabitaciones()
+        + getHabitacionGrande() : Habitacion
+        + getHabitacionMasConsumo() : Electrodomesticos
+        + getDireccion() : String
+        + setDireccion(String direccion)
+        + getListaHabitaciones() : ArrayList<Habitacion>
+        + setListaHabitaciones(ArrayList<Habitacion>)
+        + getPropietario() : Propietario
+        + setPropietario()
+        + toString() : String
+    }
+
+    class Habitacion {
+        - String nombre
+        - double metros
+        - ArrayList<Electrodomesticos> listaElectrodomesticos
+        --
+        + Habitacion(String nombre, double metros)
+        + crearElectrodomesticos(String nombre, int consumo)
+        + mostrarElectrodomesticos()
+        + calcularConsumo(int consumo) : double
+        + getMetros() : double
+        + setMetros(double metros)
+        + getNombre() : String
+        + setNombre(String nombre)
+        + toString() : String
+    }
+
+    class Electrodomesticos {
+        - String nombre
+        - int consumo
+        --
+        + Electrodomesticos(String nombre, int consumo)
+        + getConsumo() : int
+        + setConsumo(int consumo)
+        + getNombre() : String
+        + setNombre(String nombre)
+        + toString() : String
+    }
+
+    class Propietario {
+        - String nombre
+        - int edad
+        --
+        + Propietario(String nombre, int edad)
+        + getNombre() : String
+        + setNombre(String nombre)
+        + getEdad() : int
+        + setEdad(int edad)
+        + toString() : String
+    }
+
+    Casa "1" *-- "1" Propietario
+    Casa "1" *-- "0..*" Habitacion
+    Casa "1" *-- "0..*" Electrodomesticos
+    Habitacion "1" *-- "0..*" Electrodomesticos
+
+}
+
+@enduml

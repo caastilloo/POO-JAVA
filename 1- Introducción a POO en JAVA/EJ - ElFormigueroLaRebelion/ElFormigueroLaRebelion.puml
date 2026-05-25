@@ -1,0 +1,81 @@
+@startuml
+title Diagrama UML - El Formiguero y La Rebelión
+
+class Cadena {
+  - nombre : String
+  - listaProgramas : ArrayList<Programa>
+  --
+  + Cadena(nombre : String)
+  + añadirPrograma(programa : Programa)
+  + eliminarPrograma(nombre : String)
+  + getNombre() : String
+  + setNombre(nombre : String)
+  + getListaProgramas() : ArrayList<Programa>
+  + setListaProgramas(listaProgramas : ArrayList<Programa>)
+  + toString() : String
+}
+
+class Programa {
+  - nombre : String
+  - cadena : Cadena
+  - temporadas : int
+  - listaEmpleados : ArrayList<Empleado>
+  - listaInvitados : ArrayList<Invitado>
+  - director : Empleado
+  --
+  + Programa(nombre : String, cadena : Cadena, temporadas : int, director : Empleado)
+  + Programa(nombre : String, cadena : Cadena)
+  + invitadosTemporada(temporada : int)
+  + buscarInvitado(nombre : String) : boolean
+  + vecesInvitado(nombre : String) : int
+  + rastrearInvitado(nombre : String)
+  + invitadoAntes(nombre : String, otroPrograma : Programa)
+  + añadirInvitado(nombre : String, profesion : String, temporada : int)
+  + eliminarInvitado(nombre : String)
+  + añadirEmpleado(nombre : String, cargo : String)
+  + eliminarEmpleado(nombre : String)
+  + getters / setters
+  + toString() : String
+}
+
+class Empleado {
+  - id : String
+  - nombre : String
+  - cargo : String
+  - director : Empleado
+  --
+  + Empleado(nombre : String, cargo : String)
+  + generarId() : String
+  + getId() : String
+  + setId(id : String)
+  + getNombre() : String
+  + setNombre(nombre : String)
+  + getCargo() : String
+  + setCargo(cargo : String) : String
+  + getDirector() : Empleado
+  + setDirector(director : Empleado)
+  + toString() : String
+}
+
+class Invitado {
+  - nombre : String
+  - profesion : String
+  - fecha_visita : LocalDate
+  - temporada : int
+  --
+  + Invitado(nombre : String, profesion : String, temporada : int)
+  + getNombre() : String
+  + setNombre(nombre : String)
+  + getProfesion() : String
+  + setProfesion(profesion : String)
+  + getFecha_visita() : LocalDate
+  + setFecha_visita()
+  + getTemporada() : int
+  + setTemporada(temporada : int)
+  + toString() : String
+}
+
+Cadena "1" -- "*" Programa : pertenece
+Programa "1" *-- "*" Empleado : empleados
+Programa "1" *-- "*" Invitado : invitados
+@enduml
