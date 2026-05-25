@@ -6,7 +6,7 @@ Este proyecto actúa como una base sólida de conocimientos, mediante ejercicios
 
 ---
 
-## 🚀 Sobre el proyecto
+## Sobre el proyecto
 
 El objetivo de este repositorio es demostrar la comprensión de los principios fundamentales de la programación orientada a objetos, aplicados en Java, a través de código limpio, estructurado y reutilizable.
 
@@ -14,7 +14,7 @@ El objetivo de este repositorio es demostrar la comprensión de los principios f
 
 ---
 
-## 🧠 Conceptos trabajados
+## Conceptos trabajados
 
 ### 1 – Introducción a POO en Java
 - Clases y objetos
@@ -36,7 +36,7 @@ El objetivo de este repositorio es demostrar la comprensión de los principios f
 
 ---
 
-## 📂 Estructura del repositorio
+## Estructura del repositorio
 
 El proyecto está organizado por módulos temáticos, facilitando la navegación y comprensión:
 
@@ -49,7 +49,7 @@ El proyecto está organizado por módulos temáticos, facilitando la navegación
 
 ---
 
-## 🎯 Objetivos de aprendizaje
+## Objetivos de aprendizaje
 
 - Consolidar los fundamentos de POO
 - Escribir código legible y mantenible
@@ -58,7 +58,7 @@ El proyecto está organizado por módulos temáticos, facilitando la navegación
 
 ---
 
-## 📈 Enfoque
+## Enfoque
 
 Este repositorio no solo contiene ejercicios, sino que refleja:
 
@@ -68,6 +68,6 @@ Este repositorio no solo contiene ejercicios, sino que refleja:
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la licencia **MIT**. Puedes utilizarlo como referencia o base para tus propios proyectos.
