@@ -2,7 +2,7 @@
 
 Repositorio que documenta mi aprendizaje en **Programación Orientada a Objetos (POO)** en Java durante el primer año del ciclo formativo de **Desarrollo de Aplicaciones Web (DAW)**.
 
-Este proyecto actúa como una base sólida de conocimientos, combinando teoría y práctica mediante ejercicios progresivos y ejemplos aplicados.
+Este proyecto actúa como una base sólida de conocimientos, mediante ejercicios progresivos y ejemplos aplicados.
 
 ---
 
@@ -36,13 +36,6 @@ El objetivo de este repositorio es demostrar la comprensión de los principios f
 
 ---
 
-## 🛠️ Tecnologías
-
-- Java
-- IDE (IntelliJ)
-
----
-
 ## 📂 Estructura del repositorio
 
 El proyecto está organizado por módulos temáticos, facilitando la navegación y comprensión:
@@ -72,16 +65,6 @@ Este repositorio no solo contiene ejercicios, sino que refleja:
 - Evolución en la forma de programar
 - Mejora progresiva en la estructura del código
 - Aplicación práctica de conceptos teóricos
-
----
-
-## 🚀 Cómo usar este repositorio
-
-Puedes clonar el proyecto y ejecutar los ejemplos para practicar:
-
-```bash
-git clone https://github.com/caastilloo/POO-JAVA.git
-```
 
 ---
 
