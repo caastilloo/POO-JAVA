@@ -1,0 +1,46 @@
+@startuml
+
+package PlataformaStreaming {
+
+    abstract class Suscripcion {
+        - nombrePlan : String
+        - precio : double
+        --
+        + Suscripcion(nombrePlan : String, precio : double)
+        + mostrarInfo() : void
+        + obtenerBeneficios() : void
+        + obtenerPeriodoPrueba() : void
+    }
+
+    class PlanGratis {
+        + PlanGratis(nombrePlan : String, precio : double)
+        + obtenerBeneficios() : void
+        + obtenerPeriodoPrueba() : void
+    }
+
+    class PlanBasico {
+        + PlanBasico(nombrePlan : String, precio : double)
+        + obtenerBeneficios() : void
+        + obtenerPeriodoPrueba() : void
+    }
+
+    class PlanPremium {
+        + PlanPremium(nombrePlan : String, precio : double)
+        + obtenerBeneficios() : void
+        + obtenerPeriodoPrueba() : void
+    }
+
+    class PlanFamiliar {
+        + PlanFamiliar(nombrePlan : String, precio : double)
+        + obtenerBeneficios() : void
+        + obtenerPeriodoPrueba() : void
+    }
+
+    Suscripcion <|-- PlanGratis
+    Suscripcion <|-- PlanBasico
+    Suscripcion <|-- PlanPremium
+    Suscripcion <|-- PlanFamiliar
+
+}
+
+@enduml

@@ -1,0 +1,68 @@
+@startuml
+
+' Clase abstracta
+abstract class MetodoPago {
+    + procesarPago(importe : double) : void
+}
+
+' Clase Bizum
+class Bizum {
+    - telefono : String
+    - pin : int
+    --
+    + Bizum(telefono : String)
+    + procesarPago(importe : double) : void
+    + validarBizum(pin : int) : boolean
+    - generarPin() : void
+    + getTelefono() : String
+    + setTelefono(telefono : String) : void
+    + getPin() : int
+    + setPin(pin : int) : void
+}
+
+' Clase PayPal
+class PayPal {
+    - cuenta : String
+    - saldo : double
+    --
+    + PayPal(cuenta : String)
+    + procesarPago(importe : double) : void
+    + validarPayPal(importe : double) : boolean
+    + getCuenta() : String
+    + setCuenta(cuenta : String) : void
+    + getSaldo() : double
+    + setSaldo(saldo : double) : void
+    + toString() : String
+}
+
+' Clase TarjetaCredito
+class TarjetaCredito {
+    - nro_tarjeta : String
+    - tipo : String
+    --
+    + TarjetaCredito(nro_tarjeta : String, tipo : String)
+    + procesarPago(importe : double) : void
+    + validarTarjeta() : boolean
+    + getNro_tarjeta() : String
+    + setNro_tarjeta(nro_tarjeta : String) : void
+    + getTipo() : String
+    + setTipo(tipo : String) : void
+    + toString() : String
+}
+
+' Clase Tienda
+class Tienda {
+    + realizarPago(metodo : MetodoPago) : void
+    + iniciarPago() : void
+    + metodoCliente(metodo_cliente : String) : void
+}
+
+' Relaciones de herencia
+MetodoPago <|-- Bizum
+MetodoPago <|-- PayPal
+MetodoPago <|-- TarjetaCredito
+
+' Relación de uso
+Tienda --> MetodoPago
+
+@enduml
